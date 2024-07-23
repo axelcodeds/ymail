@@ -1,0 +1,58 @@
+#caja {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+#caja #buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#caja form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#caja input {
+    padding: 5px;
+    font-size: 20px;
+}
+
+#caja textarea {
+    padding: 5px;
+    font-size: 20px;
+    min-height: 200px;
+}
+
+#caja input[value='Enviar'] {
+    font-size: 16px;
+}
+
+#caja input[value='Crear borrador'] {
+    font-size: 16px;
+}
+
+#anuncio,
+#error {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+#anuncio {
+    display: none;
+}
+
+#anuncio div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}

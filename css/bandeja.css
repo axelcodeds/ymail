@@ -1,0 +1,151 @@
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+#cabecera {
+    box-shadow: none;
+    background-color: black;
+    color: white;
+}
+
+#cabecera h1 a {
+    color: #eee;
+}
+
+#contenido {
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+#lateral {
+    display: flex;
+}
+
+#secciones {
+    background-color: #eee;
+}
+
+.seccion {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#correos {
+    border-right: 1px solid #ccc;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+}
+
+.correo {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    transition: all 300ms;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.correo-titulo {
+    font-weight: bold;
+    display: block;
+}
+
+.correo-usuario {
+    text-align: right;
+    width: 100%;
+    display: block;
+    color: #6e6969;
+}
+
+.correo:hover {
+    background-color: #333;
+    color: #eee;
+}
+
+.correo-contenido {
+    font-size: 14px;
+    height: 30px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.seccion:hover {
+    background-color: #333;
+    color: #eee;
+}
+
+#vista {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#vista-cabecera {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: #eee;
+}
+
+#vista-correo {
+    padding: 30px;
+}
+
+.seleccionado {
+    background-color: black;
+    color: white;
+}
+
+#vista-usuarios {
+    padding: 15px 10px;
+    background-color: black;
+    box-shadow: 0 0 10px #555;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+#vista-usuarios span {
+    padding: 4px;
+    background-color: #2563eb;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #666;
+}
+
+#vista-contenido {
+    padding: 15px 10px;
+    background-color: #eee;
+    box-shadow: 0 0 10px #555;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    max-height: 320px;
+    overflow-y: scroll;
+}
+
+#eliminar-usuario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: none;
+}
+
+#eliminar-usuario div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}

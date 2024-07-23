@@ -1,0 +1,25 @@
+#contenido h2 {
+    margin-bottom: 30px;
+}
+
+#banner {
+    float: left;
+    width: 50%;
+}
+
+#contenido > div {
+    width: 45%;
+    float: right;
+}
+
+#contenido p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+#botones-acceso {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
